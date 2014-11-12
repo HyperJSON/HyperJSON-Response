@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "name": "HyperJSON Response Message",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "required": [
+          "code"
+        ]
+      }
+    },
+    "body": {
+      "anyOf": [{
+        "type": "array"
+      }, {
+        "type": "boolean"
+      }, {
+        "type": "integer"
+      }, {
+        "type": "number"
+      }, {
+        "type": "null"
+      }, {
+        "type": "object"
+      }, {
+        "type": "string"
+      }]
+    }
+  },
+  "required": [
+    "status"
+  ]
+}
