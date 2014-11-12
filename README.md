@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- [What is HyperJSON](../HyperJSON)
+- [What is HyperJSON](https://github.com/HyperJSON/HyperJSON)
 - [What is JSON-Schema Draft v4](http://json-schema.org/)
 
 ## Schema
